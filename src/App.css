@@ -1,0 +1,28 @@
+/* Fixed fullscreen Lightfall background */
+.lightfall-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* Centered "Coming Soon..." */
+.coming-soon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100svh;
+}
+
+.coming-soon h1 {
+  font-size: clamp(2rem, 6vw, 4.5rem);
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: -0.02em;
+  text-shadow: 0 0 40px rgba(82, 39, 255, 0.6);
+  margin: 0;
+}
