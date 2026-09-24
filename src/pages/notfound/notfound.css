@@ -1,0 +1,39 @@
+.notfound-page-container {
+  min-height: calc(100vh - 140px);
+  padding: 3rem 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.notfound-glass-card {
+  width: 100%;
+  padding: 3rem 2rem;
+  border-radius: var(--radius-lg, 4px);
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: url(#glass-displacement) blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.notfound-code {
+  font-size: 4rem;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.25);
+  margin: 0;
+  line-height: 1;
+}
+
+.notfound-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}

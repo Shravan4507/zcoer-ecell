@@ -1,0 +1,3 @@
+.legal-stack { display: grid; gap: var(--space-4); }
+.legal-section h2 { margin-bottom: var(--space-3); }
+.legal-section p { margin: 0; }

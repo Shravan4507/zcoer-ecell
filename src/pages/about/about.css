@@ -1,0 +1,1517 @@
+/* ==========================================================================
+   ABOUT PAGE STYLES — ZCOER E-CELL
+   Visual Language: Black backdrop, white typography, gold accents,
+   subtle light effects, thin borders, minimal premium styling, 4px radius.
+   ========================================================================== */
+
+.about-page {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  color: var(--text-primary, #ffffff);
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+/* Common Section Container Layout */
+.about-hero-container,
+.who-we-are-container,
+.our-mission-container,
+.our-vision-container,
+.what-we-believe-container,
+.about-ecosystem-container,
+.what-we-do-block-container,
+.our-journey-container,
+.be-part-of-it-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* About-scoped Section Headers */
+.about-page .section-header-center {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3.5rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-page .section-label {
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent-gold, #cba358);
+  margin-bottom: 0.75rem;
+  display: inline-block;
+}
+
+.about-page .section-heading {
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-weight: 900;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.15;
+  -webkit-text-stroke: 0.5px currentColor;
+}
+
+.about-page .heading-accent-line {
+  width: 48px;
+  height: 2px;
+  background: var(--accent-gold, #cba358);
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.about-page .heading-accent-line.line-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-page .section-subtext {
+  font-size: clamp(1rem, 1.4vw, 1.15rem);
+  font-weight: 400;
+  color: var(--text-secondary, rgba(255, 255, 255, 0.7));
+  line-height: 1.6;
+  margin: 0;
+  text-wrap: balance;
+}
+
+.about-page .gold-text {
+  color: var(--accent-gold, #cba358);
+  font-weight: 700;
+}
+
+/* About-scoped Buttons */
+.about-page .btn-gold-solid {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0.85rem 2.25rem;
+  min-height: 46px;
+  box-sizing: border-box;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #000000;
+  background: var(--accent-gold, #cba358);
+  border: 1px solid var(--accent-gold, #cba358);
+  border-radius: var(--radius-md, 4px);
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.15s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.about-page .btn-gold-solid:active {
+  transform: scale(0.98);
+}
+
+.about-page .btn-gold-solid:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 3px;
+}
+
+.about-page .btn-gold-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0.85rem 2.25rem;
+  min-height: 46px;
+  box-sizing: border-box;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-gold, #cba358);
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid var(--accent-gold, #cba358);
+  border-radius: var(--radius-md, 4px);
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: transform 0.15s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.about-page .btn-gold-outline:active {
+  transform: scale(0.98);
+}
+
+.about-page .btn-gold-outline:focus-visible {
+  outline: 2px solid var(--accent-gold, #cba358);
+  outline-offset: 3px;
+}
+
+.about-page .cta-arrow {
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+/* ==========================================================================
+   SECTION 1 — HERO
+   ========================================================================== */
+.about-hero-section {
+  width: 100%;
+  min-height: calc(100vh - 120px);
+  padding: 5rem 2rem 5.5rem;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.about-hero-glow {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: clamp(320px, 55vw, 680px);
+  height: clamp(280px, 45vw, 520px);
+  background: radial-gradient(circle, rgba(203, 163, 88, 0.16) 0%, rgba(203, 163, 88, 0.04) 50%, transparent 75%);
+  filter: blur(60px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.about-hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 920px;
+  z-index: 1;
+}
+
+.about-hero-badge {
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent-gold, #cba358);
+  border: 1px solid rgba(203, 163, 88, 0.35);
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 0.45rem 1.25rem;
+  border-radius: var(--radius-md, 4px);
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+.about-hero-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  margin: 0 0 1.5rem 0;
+  line-height: 0.98;
+  letter-spacing: 0.02em;
+}
+
+.heading-line {
+  font-size: clamp(2.8rem, 6.5vw, 5.5rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  -webkit-text-stroke: 1px currentColor;
+}
+
+.heading-white {
+  color: #ffffff;
+}
+
+.heading-gold {
+  color: var(--accent-gold, #cba358);
+}
+
+.about-hero-subheading {
+  font-size: clamp(1.2rem, 2.2vw, 1.75rem);
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0 0 1.75rem 0;
+  line-height: 1.35;
+  letter-spacing: 0.01em;
+}
+
+.about-hero-text {
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  font-weight: 400;
+  color: var(--text-secondary, rgba(255, 255, 255, 0.72));
+  line-height: 1.7;
+  margin: 0 0 2.75rem 0;
+  max-width: 780px;
+}
+
+.about-hero-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+/* ==========================================================================
+   SECTION 2 — WHO WE ARE
+   ========================================================================== */
+.who-we-are-section {
+  width: 100%;
+  padding: 6rem 2rem;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.who-we-are-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 4rem;
+}
+
+.who-we-are-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.who-we-are-paragraph {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text-secondary, rgba(255, 255, 255, 0.75));
+  margin: 0 0 1.5rem 0;
+}
+
+.who-we-are-paragraph.highlight-lead {
+  font-size: clamp(1.15rem, 1.8vw, 1.35rem);
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 1.55;
+  margin-bottom: 1.75rem;
+}
+
+.who-we-are-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.85rem 1.25rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-md, 4px);
+  transition: border-color 0.25s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .highlight-item:hover {
+    border-color: rgba(203, 163, 88, 0.35);
+  }
+}
+
+.highlight-indicator {
+  width: 6px;
+  height: 6px;
+  border-radius: 4px;
+  background: var(--accent-gold, #cba358);
+  box-shadow: 0 0 8px var(--accent-gold, #cba358);
+  flex-shrink: 0;
+}
+
+.highlight-text {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0.02em;
+}
+
+/* 3D Visual Frame */
+.who-we-are-visual-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.visual-frame-glow {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  background: radial-gradient(circle, rgba(203, 163, 88, 0.2) 0%, transparent 70%);
+  filter: blur(50px);
+  pointer-events: none;
+}
+
+.visual-model-card {
+  width: 100%;
+  max-width: 480px;
+  background: rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-md, 4px);
+  padding: 1.5rem;
+  box-sizing: border-box;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.model-header-tag {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  color: var(--accent-gold, #cba358);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.tag-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 4px;
+  background: var(--accent-gold, #cba358);
+  box-shadow: 0 0 6px var(--accent-gold, #cba358);
+}
+
+.model-canvas-box {
+  width: 100%;
+  height: 380px;
+  position: relative;
+}
+
+.model-footer-caption {
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 0.85rem;
+  margin-top: 0.5rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: rgba(255, 255, 255, 0.45);
+  text-align: center;
+}
+
+/* ==========================================================================
+   SECTION 3 — OUR MISSION
+   ========================================================================== */
+.our-mission-section {
+  width: 100%;
+  padding: 6rem 2rem;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.mission-statement-lead {
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 1.6;
+  margin: 0;
+  text-wrap: balance;
+  max-width: 860px;
+}
+
+.mission-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+
+.mission-card {
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md, 4px);
+  padding: 2.5rem 2rem 2.25rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.card-index-pill {
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: var(--accent-gold, #cba358);
+  border: 1px solid rgba(203, 163, 88, 0.3);
+  padding: 0.2rem 0.65rem;
+  border-radius: var(--radius-md, 4px);
+  background: rgba(203, 163, 88, 0.08);
+}
+
+.card-corner-marker {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 1.2rem;
+}
+
+.mission-card-title {
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 0 1rem 0;
+  transition: color 0.25s ease;
+}
+
+.mission-card-desc {
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--text-secondary, rgba(255, 255, 255, 0.72));
+  margin: 0;
+}
+
+.card-bottom-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--accent-gold, #cba358);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .mission-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(203, 163, 88, 0.45);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6), 0 0 24px rgba(203, 163, 88, 0.12);
+  }
+
+  .mission-card:hover .mission-card-title {
+    color: var(--accent-gold, #cba358);
+  }
+
+  .mission-card:hover .card-bottom-bar {
+    transform: scaleX(1);
+  }
+}
+
+/* ==========================================================================
+   SECTION 4 — OUR VISION
+   ========================================================================== */
+.our-vision-section {
+  width: 100%;
+  padding: 6.5rem 2rem;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+
+.vision-ambient-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: clamp(300px, 60vw, 750px);
+  height: clamp(240px, 40vw, 450px);
+  background: radial-gradient(circle, rgba(203, 163, 88, 0.15) 0%, rgba(203, 163, 88, 0.03) 60%, transparent 80%);
+  filter: blur(55px);
+  pointer-events: none;
+}
+
+.vision-glass-container {
+  max-width: 960px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(203, 163, 88, 0.25);
+  border-radius: var(--radius-md, 4px);
+  padding: 4rem 3rem;
+  box-sizing: border-box;
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 40px rgba(203, 163, 88, 0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vision-statement {
+  font-size: clamp(1.35rem, 2.6vw, 2.1rem);
+  font-weight: 500;
+  line-height: 1.5;
+  color: #ffffff;
+  margin: 1.5rem 0 2.5rem 0;
+  padding: 0;
+  text-wrap: balance;
+  font-style: normal;
+}
+
+.vision-meta-track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  padding-top: 1.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  width: 100%;
+}
+
+.meta-tag {
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  color: var(--accent-gold, #cba358);
+}
+
+.meta-separator {
+  color: rgba(255, 255, 255, 0.25);
+  font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   SECTION 5 — WHAT WE BELIEVE
+   ========================================================================== */
+.what-we-believe-section {
+  width: 100%;
+  padding: 6rem 2rem;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.principles-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+
+.principle-card {
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md, 4px);
+  padding: 2.75rem 2.25rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.principle-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.principle-number {
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: var(--accent-gold, #cba358);
+  letter-spacing: 0.04em;
+  line-height: 1;
+}
+
+.principle-bracket {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.principle-title {
+  font-size: 1.45rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 0 1rem 0;
+  line-height: 1.25;
+  transition: color 0.25s ease;
+}
+
+.principle-desc {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--text-secondary, rgba(255, 255, 255, 0.75));
+  margin: 0;
+}
+
+.principle-accent-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: var(--accent-gold, #cba358);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .principle-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(203, 163, 88, 0.4);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6), 0 0 20px rgba(203, 163, 88, 0.08);
+  }
+
+  .principle-card:hover .principle-title {
+    color: var(--accent-gold, #cba358);
+  }
+
+  .principle-card:hover .principle-accent-border {
+    opacity: 1;
+  }
+}
+
+/* ==========================================================================
+   SECTION 6 — OUR ECOSYSTEM
+   ========================================================================== */
+.about-ecosystem-section {
+  width: 100%;
+  padding: 6.5rem 2rem;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.ecosystem-subheading {
+  font-size: clamp(1.05rem, 1.8vw, 1.3rem);
+  font-weight: 400;
+  color: var(--text-secondary, rgba(255, 255, 255, 0.75));
+  margin: 0;
+}
+
+.ecosystem-orbit-layout {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.ecosystem-orbit-grid {
+  display: grid;
+  grid-template-columns: 1fr 280px 1fr;
+  grid-template-rows: auto auto;
+  gap: 2rem;
+  align-items: center;
+}
+
+.card-students {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.card-mentors {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.ecosystem-center-hub {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 2.5rem 1.5rem;
+}
+
+.card-founders {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.card-industry {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+/* Central Hub Element */
+.hub-glow-ring {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(203, 163, 88, 0.25) 0%, rgba(203, 163, 88, 0.05) 60%, transparent 80%);
+  filter: blur(25px);
+  pointer-events: none;
+}
+
+.hub-pulse-ring {
+  position: absolute;
+  width: 210px;
+  height: 210px;
+  border-radius: var(--radius-md, 4px);
+  border: 1px dashed rgba(203, 163, 88, 0.4);
+  animation: hubPulse 10s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes hubPulse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hub-inner-core {
+  background: rgba(0, 0, 0, 0.75);
+  border: 1.5px solid var(--accent-gold, #cba358);
+  border-radius: var(--radius-md, 4px);
+  padding: 2rem 1.25rem;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(203, 163, 88, 0.2);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  width: 100%;
+  max-width: 230px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.hub-badge {
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  color: var(--accent-gold, #cba358);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.hub-title {
+  font-size: 1.3rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  margin: 0 0 0.5rem 0;
+  text-transform: uppercase;
+  line-height: 1.15;
+}
+
+.hub-tagline {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+}
+
+/* Ecosystem Quad Cards */
+.ecosystem-quad-card {
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md, 4px);
+  padding: 2.25rem 2rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.quad-index {
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: var(--accent-gold, #cba358);
+  margin-bottom: 0.75rem;
+}
+
+.quad-title {
+  font-size: 1.35rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 0 0.75rem 0;
+  transition: color 0.25s ease;
+}
+
+.quad-desc {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-secondary, rgba(255, 255, 255, 0.72));
+  margin: 0;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .ecosystem-quad-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(203, 163, 88, 0.4);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6), 0 0 20px rgba(203, 163, 88, 0.1);
+  }
+
+  .ecosystem-quad-card:hover .quad-title {
+    color: var(--accent-gold, #cba358);
+  }
+}
+
+/* ==========================================================================
+   SECTION 7 — WHAT WE DO
+   ========================================================================== */
+.what-we-do-block-section {
+  width: 100%;
+  padding: 6.5rem 2rem;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.features-block-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+
+.feature-block-card {
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md, 4px);
+  padding: 2.5rem 2rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.feature-block-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.feature-block-number {
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: var(--accent-gold, #cba358);
+}
+
+.feature-block-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.3);
+  transition: background 0.25s ease, box-shadow 0.25s ease;
+}
+
+.feature-block-title {
+  font-size: 1.35rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 0 0.85rem 0;
+  line-height: 1.25;
+  transition: color 0.25s ease;
+}
+
+.feature-block-desc {
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: var(--text-secondary, rgba(255, 255, 255, 0.72));
+  margin: 0;
+}
+
+.feature-hover-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--accent-gold, #cba358);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .feature-block-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(203, 163, 88, 0.45);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6), 0 0 20px rgba(203, 163, 88, 0.1);
+  }
+
+  .feature-block-card:hover .feature-block-title {
+    color: var(--accent-gold, #cba358);
+  }
+
+  .feature-block-card:hover .feature-block-dot {
+    background: var(--accent-gold, #cba358);
+    box-shadow: 0 0 8px var(--accent-gold, #cba358);
+  }
+
+  .feature-block-card:hover .feature-hover-line {
+    transform: scaleX(1);
+  }
+}
+
+/* ==========================================================================
+   SECTION 8 — OUR JOURNEY
+   ========================================================================== */
+.our-journey-section {
+  width: 100%;
+  padding: 6.5rem 2rem;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.journey-timeline-wrapper {
+  position: relative;
+  width: 100%;
+  margin-top: 4rem;
+}
+
+/* Connecting Line across steps on Desktop */
+.journey-connecting-line {
+  position: absolute;
+  top: 19px;
+  left: 30px;
+  right: 30px;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    rgba(203, 163, 88, 0.2) 0%,
+    rgba(203, 163, 88, 0.85) 50%,
+    rgba(203, 163, 88, 0.2) 100%
+  );
+  z-index: 1;
+}
+
+.journey-steps-track {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.journey-step-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.journey-node-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.journey-step-number {
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: var(--accent-gold, #cba358);
+  background: #000000;
+  padding: 0 4px;
+}
+
+.journey-node-indicator {
+  width: 14px;
+  height: 14px;
+  border-radius: var(--radius-md, 4px);
+  background: #000000;
+  border: 2px solid var(--accent-gold, #cba358);
+  box-shadow: 0 0 10px rgba(203, 163, 88, 0.5);
+  box-sizing: border-box;
+}
+
+.journey-card-content {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md, 4px);
+  padding: 1.75rem 1.5rem;
+  box-sizing: border-box;
+  width: 100%;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+  min-height: 190px;
+  display: flex;
+  flex-direction: column;
+}
+
+.journey-phase-tag {
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent-gold, #cba358);
+  margin-bottom: 0.5rem;
+}
+
+.journey-step-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin: 0 0 0.65rem 0;
+  line-height: 1.25;
+}
+
+.journey-step-desc {
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--text-secondary, rgba(255, 255, 255, 0.72));
+  margin: 0;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .journey-card-content:hover {
+    transform: translateY(-4px);
+    border-color: rgba(203, 163, 88, 0.45);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6), 0 0 20px rgba(203, 163, 88, 0.1);
+  }
+}
+
+/* ==========================================================================
+   SECTION 9 — BE PART OF IT (FINAL CTA)
+   ========================================================================== */
+.be-part-of-it-section {
+  width: 100%;
+  padding: 7rem 2rem 8rem;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+  text-align: center;
+}
+
+.be-part-glow-backdrop {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: clamp(340px, 65vw, 800px);
+  height: clamp(260px, 45vw, 480px);
+  background: radial-gradient(circle, rgba(203, 163, 88, 0.22) 0%, rgba(203, 163, 88, 0.05) 55%, transparent 75%);
+  filter: blur(60px);
+  pointer-events: none;
+}
+
+.be-part-card {
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(203, 163, 88, 0.3);
+  border-radius: var(--radius-md, 4px);
+  padding: 4.5rem 3rem;
+  box-sizing: border-box;
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.7), 0 0 40px rgba(203, 163, 88, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.be-part-badge {
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent-gold, #cba358);
+  border: 1px solid rgba(203, 163, 88, 0.3);
+  background: rgba(203, 163, 88, 0.08);
+  padding: 0.35rem 1rem;
+  border-radius: var(--radius-md, 4px);
+  margin-bottom: 1.5rem;
+}
+
+.be-part-heading {
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.15;
+  -webkit-text-stroke: 0.5px currentColor;
+  text-wrap: balance;
+}
+
+.be-part-text {
+  font-size: clamp(1.05rem, 1.7vw, 1.25rem);
+  line-height: 1.65;
+  color: var(--text-secondary, rgba(255, 255, 255, 0.8));
+  margin: 0 0 3rem 0;
+  max-width: 680px;
+  text-wrap: balance;
+}
+
+.be-part-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN BREAKPOINTS
+   XL: 1441px+
+   LG: 1025px - 1440px
+   MD: 768px - 1024px
+   SM: 481px - 767px
+   XS: 320px - 480px
+   ========================================================================== */
+
+/* MD Tier: Tablets & Small Laptops (768px – 1024px) */
+@media (max-width: 1024px) {
+  .who-we-are-grid {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+
+  .who-we-are-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .who-we-are-highlights {
+    max-width: 540px;
+  }
+
+  .mission-pillars-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .ecosystem-orbit-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 1.5rem;
+  }
+
+  .card-students {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .card-mentors {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .ecosystem-center-hub {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    padding: 1.5rem 0;
+  }
+
+  .card-founders {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .card-industry {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .features-block-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .journey-connecting-line {
+    display: none;
+  }
+
+  .journey-steps-track {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .journey-step-item {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1.5rem;
+    width: 100%;
+  }
+
+  .journey-node-wrap {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+    padding-top: 0.5rem;
+  }
+
+  .journey-card-content {
+    min-height: auto;
+  }
+}
+
+/* SM Tier: Mobile Landscape / Large Phones (481px – 767px) */
+@media (max-width: 767px) {
+  .about-hero-section {
+    padding: 4rem 1.5rem 4.5rem;
+    min-height: auto;
+  }
+
+  .who-we-are-section,
+  .our-mission-section,
+  .our-vision-section,
+  .what-we-believe-section,
+  .about-ecosystem-section,
+  .what-we-do-block-section,
+  .our-journey-section,
+  .be-part-of-it-section {
+    padding: 4.5rem 1.5rem;
+  }
+
+  .principles-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .ecosystem-orbit-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1.25rem;
+  }
+
+  .card-students,
+  .card-mentors,
+  .ecosystem-center-hub,
+  .card-founders,
+  .card-industry {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .features-block-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .vision-glass-container {
+    padding: 3rem 1.75rem;
+  }
+
+  .be-part-card {
+    padding: 3.5rem 1.75rem;
+  }
+
+  .be-part-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-gold-solid,
+  .btn-gold-outline {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+/* XS Tier: Mobile Portrait (320px – 480px) */
+@media (max-width: 480px) {
+  .about-hero-section {
+    padding: 3.5rem 1rem 4rem;
+  }
+
+  .about-hero-heading {
+    margin-bottom: 1.25rem;
+  }
+
+  .heading-line {
+    font-size: clamp(2.2rem, 11vw, 2.9rem);
+  }
+
+  .about-hero-subheading {
+    font-size: 1.1rem;
+    line-height: 1.35;
+    margin-bottom: 1.25rem;
+  }
+
+  .about-hero-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+
+  .about-hero-actions {
+    width: 100%;
+  }
+
+  .about-hero-actions .btn-gold-solid {
+    width: 100%;
+    max-width: 290px;
+    font-size: 0.8rem;
+    padding: 0.8rem 1.25rem;
+  }
+
+  .who-we-are-section,
+  .our-mission-section,
+  .our-vision-section,
+  .what-we-believe-section,
+  .about-ecosystem-section,
+  .what-we-do-block-section,
+  .our-journey-section,
+  .be-part-of-it-section {
+    padding: 3.5rem 1rem;
+  }
+
+  .section-header-center {
+    margin-bottom: 2.5rem;
+  }
+
+  .section-heading {
+    font-size: 1.75rem;
+  }
+
+  .visual-model-card {
+    padding: 1.25rem;
+  }
+
+  .model-canvas-box {
+    height: 300px;
+  }
+
+  .mission-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .vision-glass-container {
+    padding: 2.5rem 1.25rem;
+  }
+
+  .vision-statement {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+
+  .vision-meta-track {
+    gap: 0.75rem;
+  }
+
+  .meta-tag {
+    font-size: 0.72rem;
+  }
+
+  .principle-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .ecosystem-quad-card {
+    padding: 1.75rem 1.5rem;
+  }
+
+  .feature-block-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .journey-timeline-wrapper {
+    margin-top: 2.5rem;
+  }
+
+  .journey-step-item {
+    gap: 1rem;
+  }
+
+  .journey-card-content {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .be-part-card {
+    padding: 2.75rem 1.25rem;
+  }
+
+  .be-part-heading {
+    font-size: 1.65rem;
+  }
+
+  .be-part-text {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+  }
+
+  .btn-gold-solid,
+  .btn-gold-outline {
+    width: 100%;
+    max-width: 280px;
+    font-size: 0.8rem;
+    padding: 0.8rem 1.25rem;
+  }
+}

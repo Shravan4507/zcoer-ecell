@@ -1,0 +1,95 @@
+.contact-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: var(--space-6);
+}
+
+.contact-details dl {
+  display: grid;
+  gap: var(--space-6);
+  margin: var(--space-8) 0 0;
+}
+
+.contact-details dl div {
+  display: grid;
+  gap: var(--space-1);
+}
+
+.contact-details dt {
+  color: var(--accent-gold);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.contact-details dd {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+.contact-form,
+.contact-form label {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.contact-form {
+  align-content: start;
+  gap: var(--space-5);
+}
+
+.contact-form__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.contact-form label span {
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea,
+.profile-form input,
+.profile-form select {
+  width: 100%;
+  min-height: 44px;
+  box-sizing: border-box;
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  padding: 0.7rem 0.8rem;
+  color: var(--text-primary);
+  background: rgba(0, 0, 0, 0.45);
+  font: inherit;
+}
+
+.contact-form textarea {
+  min-height: 9rem;
+  resize: vertical;
+}
+
+.contact-form option,
+.profile-form option {
+  color: #111111;
+}
+
+.contact-form input:focus-visible,
+.contact-form select:focus-visible,
+.contact-form textarea:focus-visible,
+.profile-form input:focus-visible,
+.profile-form select:focus-visible {
+  outline: 2px solid var(--accent-gold);
+  outline-offset: 2px;
+}
+
+@media (max-width: 767px) {
+  .contact-layout,
+  .contact-form__grid {
+    grid-template-columns: 1fr;
+  }
+}

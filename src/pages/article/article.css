@@ -1,0 +1,5 @@
+.article-detail { padding: 0; overflow: hidden; }
+.article-detail > img { display: block; width: 100%; aspect-ratio: 16 / 8; object-fit: cover; }
+.article-detail__body { width: min(100%, 46rem); padding: clamp(1.5rem, 5vw, 4rem); box-sizing: border-box; }
+.article-detail__body p { margin: 0 0 var(--space-6); color: var(--text-secondary); font-size: clamp(1rem, 1.5vw, 1.15rem); line-height: 1.85; }
+.article-detail__body p:last-child { margin-bottom: 0; }

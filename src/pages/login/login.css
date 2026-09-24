@@ -1,0 +1,201 @@
+/* Login Page Glassmorphic Layout */
+.login-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 140px);
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Glassmorphic Login Card */
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  padding: 2.5rem 2rem;
+  border-radius: var(--radius-lg, 4px);
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: url(#glass-displacement) blur(24px);
+  -webkit-backdrop-filter: url(#glass-displacement) blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.75rem;
+  box-sizing: border-box;
+}
+
+.login-card--profile {
+  max-width: 56rem;
+  align-items: stretch;
+  text-align: left;
+}
+
+/* Header & Brand Icon */
+.login-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.875rem;
+}
+
+.login-3d-logo-container {
+  height: 180px;
+  width: 100%;
+  max-width: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.5));
+}
+
+.login-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.login-subtitle {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.5;
+  margin: 0;
+  max-width: 320px;
+}
+
+/* Google Sign-In Action Area */
+.login-action-area {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.login-setup-note,
+.login-status {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.login-status {
+  padding: var(--space-8);
+}
+
+.btn-google-login {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius-md, 4px);
+  background: rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+  user-select: none;
+}
+
+.btn-google-login:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.btn-google-login:hover {
+  background: rgba(0, 0, 0, 0.55);
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.btn-google-login:active {
+  transform: scale(0.98);
+}
+
+.google-svg-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+/* Legal Footer Note */
+.login-disclaimer {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.45);
+  line-height: 1.45;
+  margin: 0;
+}
+
+.login-legal-link {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.login-legal-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.profile-form {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.profile-form__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.profile-form label {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.profile-form label > span {
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.profile-form__checkbox {
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.profile-form__checkbox input {
+  width: 1.1rem;
+  height: 1.1rem;
+  margin: 0;
+}
+
+.profile-form__checkbox span {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+/* Responsive Scaling */
+@media (max-width: 480px) {
+  .login-card {
+    padding: 2rem 1.25rem;
+    max-width: 100%;
+  }
+
+  .login-title {
+    font-size: 1.2rem;
+  }
+
+  .profile-form__grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,20 @@
+.venture-detail {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(1.5rem, 5vw, 4rem);
+}
+
+.venture-detail img {
+  width: clamp(5rem, 14vw, 8rem);
+  height: clamp(5rem, 14vw, 8rem);
+  padding: var(--space-3);
+  box-sizing: border-box;
+  object-fit: contain;
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: var(--radius-md);
+}
+
+@media (max-width: 480px) {
+  .venture-detail { grid-template-columns: 1fr; }
+}

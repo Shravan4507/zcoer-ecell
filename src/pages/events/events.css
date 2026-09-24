@@ -1,0 +1,27 @@
+.event-card__heading-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+.event-card__date {
+  flex: 0 0 auto;
+  padding: var(--space-2) var(--space-3);
+  color: var(--accent-gold);
+  border: 1px solid rgba(203, 163, 88, 0.35);
+  border-radius: var(--radius-md);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.event-card__location {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+.content-button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
